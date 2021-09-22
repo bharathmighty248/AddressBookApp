@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/address-book-logo.png" alt="logo">
+            <div class="logo-name">
+                <div class="address-text">ADDRESS</div>
+                <div class="address-text book-text">BOOK</div>            
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="form-header-content">
+            <div class="person-detail-text">
+                Person Details  <div class="emp-count"> 10 </div>
+            </div>
+            <div class="header-button">
+                <a href="addPerson.html" class="add-button">
+                <img src="../assets/icons/add-24px.svg" alt="+">  Add Person</a>
+            </div>            
+        </div>
+        <table id="display" class="table">
+        </table>
+    </div>
+
+    <script defer src="../js/home.js"></script>
+    <script defer src="../js/addPerson.js"></script>
+    <script defer src="../js/Person.js"></script>
+</body>
+</html>

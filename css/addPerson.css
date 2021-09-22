@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #f7f7f7;
+
+}
+
+error-output {
+    font-size: 14px;
+    color: red;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+
+.header {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+}
+
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid green;
+    width: 80%;
+}
+
+.logo-content-img {
+    border: 0px solid #42515f;
+}
+
+.logo-name {
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.address-text {
+    font: 17px Montserrat;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #24bceb;
+    text-transform: capitalize;
+}
+
+.book-text {
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form-content {
+    min-height: calc(100% -80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+    margin: auto;
+}
+
+.form {
+    border-radius: 8px;
+    opacity: 1;
+    margin: 60px 0 20px;
+    box-shadow: 5px 5px 15px 7px #e5e2e2;
+    background-color: #fff;
+}
+
+.form-head {
+    font: normal normal bold 24px/37px Roboto;
+    font-family: 'Roboto', regular;
+    letter-spacing: 0px;
+    color: #fff;
+    text-transform: capitalize;
+    opacity: 20px;
+    padding: 10px;
+    background-color: #008CFF;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 0;
+}
+
+.cancel-button {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    padding: 3px 0 0;
+    padding-left: 0px;
+    padding-top: 3px;
+    margin: auto 0 auto auto;
+    
+}
+.cancel-button a {
+    text-decoration: none;
+    color: #008CFF;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-head {
+    display: flex;
+    flex-direction: row ;
+    padding: 0 70px;
+}
+.form-head-text {
+    display: block;
+    font-size: 1.17em;
+    font-family: 'Montserrat';
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.form-body {
+    padding: 10px 70px 30px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    border: 0px solid green;
+}
+
+.label {
+    min-width: 140px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+}
+
+.text {
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #fff;
+}
+.input[type=text]:focus {
+    outline-style: none;
+    border-color: rgb(38, 225, 250);
+  }
+  .input[type=tel]:focus {
+    outline-style: none;
+    border-color: rgb(38, 225, 250);
+  }
+
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+textarea:focus {
+    outline-style: none;
+    border-color: rgb(38, 225, 250);
+  }
+
+.inner-rows {
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    color: #42515f;
+}
+
+.columns-content {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.zip {
+    margin-right: 0;
+}
+
+.buttonParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #e2e2e2b2;
+}
+
+.submitButton {
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 930px) {
+
+    .form-content{
+        width: 50%;
+    }
+
+    .inner-rows {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columns-content {
+        width: 100%;
+    }
+
+    .buttonParent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+    }
+
+    .button {
+        min-width: 40%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px 20px;
+
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .form-content {
+        margin: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+
+}
